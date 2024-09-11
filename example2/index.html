@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Flexbox - tutorial</title>
+  </head>
+  <body>
+    <h1>Flexbox guide</h1>
+
+    <h2>Parent properties</h2>
+
+    <h3>Display</h3>
+
+    <p>This property defines a <i> flex container.</i></p>
+
+    <code>
+      <pre style="font-family: monospace">
+     
+            .container {
+                display: flex;
+            }
+        </pre
+      >
+    </code>
+
+    <h3>Flex direction</h3>
+
+    <ul>
+      <li>
+        <span class="css-code"><mark>row</mark></span> (Default) = left to right
+        / right to left
+      </li>
+
+      <li>
+        <span class="css-code">
+          <mark>row-reverse</mark>
+        </span>
+        right to left / left to right
+      </li>
+
+      <li>
+        <span class="css-code">
+          <mark>column</mark>
+        </span>
+        Same as row, but from top to bottom
+      </li>
+
+      <li>
+        <span class="css-code">
+          <mark>column-reverse</mark>
+        </span>
+        Same as row-reverse but from bottom to top
+      </li>
+
+      </ul>
+
+      <section class="container">
+          <div class="flex-direction-container">
+            <h4>Flex direction row</h4>
+            <div class="flex-direction-row">
+              <div class="flex-item flex-item1">Item1</div>
+              <div class="flex-item flex-item2">Item2</div>
+              <div class="flex-item flex-item3">Item3</div>
+              <div class="flex-item flex-item4">Item4</div>
+            </div>
+          </div>
+          <div class="flex-direction-container">
+            <h4>Flex direction row reverse</h4>
+            <div class="flex-direction-row-reverse">
+              <div class="flex-item flex-item1">Item1</div>
+              <div class="flex-item flex-item2">Item2</div>
+              <div class="flex-item flex-item3">Item3</div>
+              <div class="flex-item flex-item4">Item4</div>
+            </div>
+          </div>
+          <div class="flex-direction-container" style="height: 320px;">
+            <h4>Flex direction column</h4>
+            <div class="flex-direction-column">
+                <div class="flex-item flex-item1">Item1</div>
+                <div class="flex-item flex-item2">Item2</div>
+                <div class="flex-item flex-item3">Item3</div>
+                <div class="flex-item flex-item4">Item4</div>
+            </div>
+          </div>
+          
+          <div class="flex-direction-container" style="height: 320px;">
+            <h4>Flex direction column reverse</h4>
+            <div class="flex-direction-column-reverse">
+                <div class="flex-item flex-item1">Item1</div>
+                <div class="flex-item flex-item2">Item2</div>
+                <div class="flex-item flex-item3">Item3</div>
+                <div class="flex-item flex-item4">Item4</div>
+            </div>
+          </div>
+      </section>
+
+
+
+      <h3>Justify content</h3>
+
+    <ul>
+      <li>
+        <span class="css-code"><mark>Flex-start</mark></span> (Default)
+      </li>
+      
+      <li>
+        <span class="css-code"><mark>Flex-end</mark></span>
+      </li>
+      
+      <li>
+        <span class="css-code"><mark>Center</mark></span>
+      </li>
+      
+      <li>
+        <span class="css-code"><mark>Space-between</mark></span>
+      </li>
+      
+      <li>
+        <span class="css-code"><mark>Space-around</mark></span>
+      </li>
+      
+      <li>
+        <span class="css-code"><mark>Space-evenly</mark></span>
+      </li>
+    </ul>
+
+    <section class="container">
+        <div class="flex-direction-container" style="width: 500px;">
+            <h4>Justify content flex start</h4>
+        
+            <div class="justify-content-flex-start">
+              <div class="flex-item flex-item1">Item1</div>
+              <div class="flex-item flex-item2">Item2</div>
+              <div class="flex-item flex-item3">Item3</div>
+              <div class="flex-item flex-item4">Item4</div>
+            </div>
+        
+        </div>
+        
+        <div class="flex-direction-container" style="width: 500px;">
+            <h4>Justify content flex end</h4>
+        
+            <div class="justify-content-flex-start">
+              <div class="flex-item flex-item1">Item1</div>
+              <div class="flex-item flex-item2">Item2</div>
+              <div class="flex-item flex-item3">Item3</div>
+              <div class="flex-item flex-item4">Item4</div>
+            </div>
+        
+        </div>
+        
+        <div class="flex-direction-container" style="width: 500px;">
+            <h4>Justify content center</h4>
+        
+            <div class="justify-content-center">
+              <div class="flex-item flex-item1">Item1</div>
+              <div class="flex-item flex-item2">Item2</div>
+              <div class="flex-item flex-item3">Item3</div>
+              <div class="flex-item flex-item4">Item4</div>
+            </div>
+        
+        </div>
+        
+        <div class="flex-direction-container" style="width: 500px;">
+            <h4>Justify content space Space-between</h4>
+        
+            <div class="justify-content-space-between">
+              <div class="flex-item flex-item1">Item1</div>
+              <div class="flex-item flex-item2">Item2</div>
+              <div class="flex-item flex-item3">Item3</div>
+              <div class="flex-item flex-item4">Item4</div>
+            </div>
+        
+        </div>
+        
+        <div class="flex-direction-container" style="width: 500px;">
+            <h4>Justify content space evenly</h4>
+        
+            <div class="justify-content-space-evenly">
+              <div class="flex-item flex-item1">Item1</div>
+              <div class="flex-item flex-item2">Item2</div>
+              <div class="flex-item flex-item3">Item3</div>
+              <div class="flex-item flex-item4">Item4</div>
+            </div>
+        
+        </div>
+        
+        <div class="flex-direction-container" style="width: 500px;">
+            <h4>Justify content space around</h4>
+        
+            <div class="justify-content-space-around">
+              <div class="flex-item flex-item1">Item1</div>
+              <div class="flex-item flex-item2">Item2</div>
+              <div class="flex-item flex-item3">Item3</div>
+              <div class="flex-item flex-item4">Item4</div>
+            </div>
+        
+        </div>
+    </section>
+
+
+
+
+  </body>
+</html>
